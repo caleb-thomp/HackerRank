@@ -1,2 +1,2 @@
 # HackerRank
-HackerRank Projects
+HackerRank Typescript Projects
