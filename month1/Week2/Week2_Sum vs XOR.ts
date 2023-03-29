@@ -1,10 +1,8 @@
 function sumXor(n: number): number {
-    let count = 0;
-    while (n > 0) {
-        if ((n & 1) === 0) {
-            count++;
-        }
-        n >>= 1;
+    if (n === 0) {
+        return 1;
     }
-    return 2 ** count;
+    const s: string = n.toString(2);
+    const r: number = s.split('0').length - 1;
+    return Math.pow(2, r);
 }
